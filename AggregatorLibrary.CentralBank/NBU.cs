@@ -18,7 +18,7 @@ namespace AggregatorLibrary.CentralBank
             {
                 var textData = wc.DownloadString(ExchangeQueryUrl);
 
-                var data = JsonConvert.DeserializeObject<List<NBUExchangeRowModel>>(textData);
+                var data = JsonConvert.DeserializeObject<List<NBUExchangeRowModel>>(textData, new JsonSerializerSettings() { DateFormatString = "dd.MM.yyyy" });
 
                 return new NBUExchangeQueryResultModel() { Data = data };
             }
