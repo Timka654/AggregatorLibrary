@@ -5,7 +5,7 @@
 		<Platforms>AnyCPU;x64</Platforms>
 		<Configurations>Debug;Release;DebugStable;ASP.NET</Configurations>
 		<Version>$(VersionSuffix)</Version>
-		<Authors>relife87</Authors>
+		<Authors>Relife87</Authors>
 	</PropertyGroup>
 
 	<ItemGroup>
